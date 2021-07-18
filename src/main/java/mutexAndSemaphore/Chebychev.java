@@ -1,10 +1,12 @@
+package mutexAndSemaphore;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Chebychev extends Knn{
+public class Chebychev extends Knn {
 	public String KnnFunction(int g, ArrayList<Imagem> listaImagens, List<Float> listaAtributos) {
 		float [] menores = new float[g];
-		Imagem [] menord = new Imagem[g];
+		Imagem[] menord = new Imagem[g];
 		float soma = 0;
 		float aux = 0;
 		float aux3 = 0;

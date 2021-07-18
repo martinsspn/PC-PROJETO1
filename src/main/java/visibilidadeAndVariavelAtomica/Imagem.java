@@ -1,3 +1,5 @@
+package visibilidadeAndVariavelAtomica;
+
 import java.util.ArrayList;
 
 public class Imagem {

@@ -1,3 +1,5 @@
+package serial;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -5,10 +7,9 @@ import java.util.ArrayList;
 public class Main{ //extends Application{
 
 	public static void main(String[] args) {
-			//launch(args);
 		TratamentoImagem tratamento = new TratamentoImagem();
-		String caminhoImagem = "C:\\Users\\marti\\OneDrive\\Desktop\\Nova pasta (2)\\dataset_2019_1\\person\\0.png";
-		String caminhoLeitura = "C:\\Users\\marti\\OneDrive\\Desktop\\Nova pasta (2)\\dataset_2019_1.csv";
+		//String caminhoImagem = "C:\\Users\\marti\\OneDrive\\Desktop\\Nova pasta (2)\\dataset_2019_1\\person\\0.png";
+		String caminhoLeitura = "C:\\Users\\efssp\\Documents\\dataset_2019_1\\dataset_2019_1.csv";
 		Leitura leitura = null;
 		try {
 			leitura = new Leitura(caminhoLeitura);
@@ -26,7 +27,7 @@ public class Main{ //extends Application{
 			imagens.add(imagem);
 		}
 		Knn a = new Chebychev();
-		File folder = new File("C:\\Users\\marti\\OneDrive\\Desktop\\Nova pasta (2)\\dataset_2019_1\\Nova pasta");
+		File folder = new File("C:\\Users\\efssp\\Documents\\dataset_2019_1\\dataset");
 		for (File file : folder.listFiles()) {
 			if (!file.isDirectory()) {
 				//System.out.println(file.getAbsolutePath());
@@ -35,8 +36,9 @@ public class Main{ //extends Application{
 				//findAllFilesInFolder(file);
 			}
 		}
-		String x = a.KnnFunction(5,imagens, tratamento.TratamentodaImagem(caminhoImagem));
-		System.out.println(x);
+		System.out.println(folder.listFiles().length);
+		/*String x = a.KnnFunction(5,imagens, tratamento.TratamentodaImagem(caminhoImagem));
+		System.out.println(x);*/
 	}
 	
 	/*
