@@ -83,3 +83,8 @@ README.md
 *.iml
 *.class
 *.class
+*.dll
+*.h
+*.cc
+*.cpp
+

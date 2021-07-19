@@ -1,5 +1,7 @@
 package visibilidadeAndVariavelAtomica;
 
+import org.openjdk.jcstress.annotations.Actor;
+
 import java.io.File;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -18,6 +20,7 @@ public class PCThread extends Thread{
         }
     }
 
+    @Actor
     public void verificarImagem() throws InterruptedException {
         TratamentoImagem tratamento = new TratamentoImagem();
         Knn a = new Chebychev();

@@ -11,8 +11,8 @@ public class Main{ //extends Application{
 
 	public static File folder = new File("C:\\Users\\marti\\OneDrive\\Documentos\\GitHub\\PC-PROJETO1\\dataset_2019_1\\dataset");
 	public static ArrayList<Imagem> imagens = new ArrayList<Imagem>();
-
 	public static int index=0;
+	public static Set<Integer> teste = new HashSet<>();
 
 	public static void main(String[] args) {
 		String caminhoLeitura = "C:\\Users\\marti\\OneDrive\\Documentos\\GitHub\\PC-PROJETO1\\dataset_2019_1\\dataset_2019_1.csv";

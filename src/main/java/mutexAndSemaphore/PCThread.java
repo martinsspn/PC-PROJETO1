@@ -1,7 +1,6 @@
 package mutexAndSemaphore;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.concurrent.Semaphore;
 
 public class PCThread extends Thread{
@@ -18,7 +17,8 @@ public class PCThread extends Thread{
         }
     }
 
-    public void verificarImagem() throws InterruptedException {
+
+    public int verificarImagem() throws InterruptedException {
         TratamentoImagem tratamento = new TratamentoImagem();
         Knn a = new Chebychev();
         File[] files = Main.folder.listFiles();
@@ -35,9 +35,14 @@ public class PCThread extends Thread{
             }
             s1.acquire();
             i = Main.index;
+            if(Main.teste.contains(i)){
+                return 1;
+            }
+            Main.teste.add(i);
             Main.index++;
             s1.release();
         }
         System.out.println(i);
+        return 0;
     }
 }

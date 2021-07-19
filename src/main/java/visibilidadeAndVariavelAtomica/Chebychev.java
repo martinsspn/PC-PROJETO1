@@ -75,18 +75,18 @@ public class Chebychev extends Knn {
 		}
 		if(contperson == contnotperson) {
 			if(menord[aux4].getClasse().equals(person)) {
-				return "há pessoas";
+				return "ha pessoas";
 			}
 			else{
-				return "não há pessoas";
+				return "nao ha pessoas";
 			}
 			
 		}
 		if (contperson > contnotperson) {
-			return "há pessoas";
+			return "ha pessoas";
 		}
 		else{
-			return "não há pessoas";
+			return "nao ha pessoas";
 		}
 	}
 
