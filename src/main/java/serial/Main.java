@@ -7,9 +7,9 @@ import java.util.ArrayList;
 public class Main{ //extends Application{
 
 	public static void main(String[] args) {
+		long inicio = System.currentTimeMillis();
 		TratamentoImagem tratamento = new TratamentoImagem();
-		//String caminhoImagem = "C:\\Users\\marti\\OneDrive\\Desktop\\Nova pasta (2)\\dataset_2019_1\\person\\0.png";
-		String caminhoLeitura = "C:\\Users\\efssp\\Documents\\dataset_2019_1\\dataset_2019_1.csv";
+		String caminhoLeitura = "C:\\Users\\marti\\OneDrive\\Documentos\\GitHub\\PC-PROJETO1\\dataset_2019_1\\dataset_2019_1.csv";
 		Leitura leitura = null;
 		try {
 			leitura = new Leitura(caminhoLeitura);
@@ -27,28 +27,16 @@ public class Main{ //extends Application{
 			imagens.add(imagem);
 		}
 		Knn a = new Chebychev();
-		File folder = new File("C:\\Users\\efssp\\Documents\\dataset_2019_1\\dataset");
+		File folder = new File("C:\\Users\\marti\\OneDrive\\Documentos\\GitHub\\PC-PROJETO1\\dataset_2019_1\\dataset");
+		int i = 0;
 		for (File file : folder.listFiles()) {
 			if (!file.isDirectory()) {
-				//System.out.println(file.getAbsolutePath());
-				System.out.println(a.KnnFunction(5,imagens, tratamento.TratamentodaImagem(file.getAbsolutePath())));
-			} else {
-				//findAllFilesInFolder(file);
+				System.out.println(a.KnnFunction(5,imagens, tratamento.TratamentodaImagem(file.getAbsolutePath())) + " Index: " + i);
+				i++;
 			}
 		}
 		System.out.println(folder.listFiles().length);
-		/*String x = a.KnnFunction(5,imagens, tratamento.TratamentodaImagem(caminhoImagem));
-		System.out.println(x);*/
+		long fim  = System.currentTimeMillis();
+		System.out.println("Tempo de duracao:" + (fim - inicio ));
 	}
-	
-	/*
-	public void start(Stage primaryStage) throws Exception {
-		// TODO Auto-generated method stub
-		Pane root = FXMLLoader.load(getClass().getResource("TelaPrincipal.fxml"));
-		Scene scene = new Scene(root, 502, 676);
-		primaryStage.setScene(scene);
-		primaryStage.show();
-	}
-
-	 */
 }

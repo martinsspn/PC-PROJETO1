@@ -9,7 +9,10 @@ public class PCThread extends Thread{
 
     public void run(){
         try {
+            long inicio = System.currentTimeMillis();
             verificarImagem();
+            long fim  = System.currentTimeMillis();
+            System.out.println("Tempo de duracao:" + (fim - inicio ));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

@@ -2,14 +2,17 @@ package visibilidadeAndVariavelAtomica;
 
 import java.io.File;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class PCThread extends Thread{
-    private final Semaphore s1 = new Semaphore(1,true);
-    volatile Index index = new Index();
+
 
     public void run(){
         try {
+            long inicio = System.currentTimeMillis();
             verificarImagem();
+            long fim  = System.currentTimeMillis();
+            System.out.println("Tempo de duracao:" + (fim - inicio ));
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -19,7 +22,7 @@ public class PCThread extends Thread{
         TratamentoImagem tratamento = new TratamentoImagem();
         Knn a = new Chebychev();
         File[] files = Main.folder.listFiles();
-        int i = index.getIndex();
+        int i = Main.idx.getAndIncrement();
         boolean first = true;
         while(i< Main.folder.listFiles().length){
             System.out.println(a.KnnFunction(5, Main.imagens, tratamento.TratamentodaImagem(files[i].getAbsolutePath())) + " " + "index: " + i);
@@ -27,8 +30,7 @@ public class PCThread extends Thread{
                 first = false;
                 continue;
             }
-            i = index.getIndex();
-            index.incrementIndex();
+            i = Main.idx.getAndIncrement();
         }
         System.out.println(i);
     }
