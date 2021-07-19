@@ -10,7 +10,7 @@ import org.opencv.objdetect.HOGDescriptor;
 
 import java.util.List;
 
-public class TratamentoImagem {
+public class TratamentoImagem{
 	public List<Float> TratamentodaImagem(String caminho){
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 		HOGDescriptor hog = new HOGDescriptor();
