@@ -1,6 +1,0 @@
-JMH S 16 serial.BenchTest S 39 serial.generated.BenchTest_init_jmhTest S 4 init S 10 Throughput E A 1 1 1 E E E E E E E I 1 1 E E E E E E E E E 
-JMH S 16 serial.BenchTest S 49 serial.generated.BenchTest_concurrentInit_jmhTest S 14 concurrentInit S 10 Throughput E A 1 1 1 E E E E E E E I 1 1 E E E E E E E E E 
-JMH S 27 mutexAndSemaphore.BenchTest S 50 mutexAndSemaphore.generated.BenchTest_init_jmhTest S 4 init S 10 Throughput E A 1 1 1 E E E E E E E I 1 1 E E E E E E E E E 
-JMH S 27 mutexAndSemaphore.BenchTest S 60 mutexAndSemaphore.generated.BenchTest_concurrentInit_jmhTest S 14 concurrentInit S 10 Throughput E A 1 1 1 E E E E E E E I 1 1 E E E E E E E E E 
-JMH S 40 visibilidadeAndVariavelAtomica.BenchTest S 63 visibilidadeAndVariavelAtomica.generated.BenchTest_init_jmhTest S 4 init S 10 Throughput E A 1 1 1 E E E E E E E I 1 1 E E E E E E E E E 
-JMH S 40 visibilidadeAndVariavelAtomica.BenchTest S 73 visibilidadeAndVariavelAtomica.generated.BenchTest_concurrentInit_jmhTest S 14 concurrentInit S 10 Throughput E A 1 1 1 E E E E E E E I 1 1 E E E E E E E E E 
