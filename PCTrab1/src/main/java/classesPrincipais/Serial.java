@@ -14,11 +14,14 @@ public class Serial{
 		System.out.println("Tempo de duracao:" + (fim - inicio ));
 	}
 
-	public static void verificarImagem(){
+	public static int verificarImagem(){
 		TratamentoImagem tratamento = new TratamentoImagem();
 		imagens = LerCSV.lerCSV();
 		Chebychev a = new Chebychev();
 		File folder = new File("C:\\Users\\marti\\OneDrive\\Documentos\\GitHub\\PC-PROJETO1\\dataset_2019_1\\dataset");
+		if(!folder.exists()){
+			return -1;
+		}
 		int i = 0;
 		for (File file : folder.listFiles()) {
 			if (!file.isDirectory()) {
@@ -27,5 +30,6 @@ public class Serial{
 			}
 		}
 		System.out.println(folder.listFiles().length);
+		return 0;
 	}
 }

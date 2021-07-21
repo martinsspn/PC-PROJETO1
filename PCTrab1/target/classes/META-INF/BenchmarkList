@@ -1,3 +1,3 @@
-JMH S 22 ClassesTeste.BenchTest S 52 ClassesTeste.generated.BenchTest_testeMTXSEM_jmhTest S 11 testeMTXSEM S 10 Throughput E A 1 1 1 E I 1 2 E E I 1 3 E E I 1 2 E E E E E E U 7 SECONDS E E 
-JMH S 22 ClassesTeste.BenchTest S 52 ClassesTeste.generated.BenchTest_testeAtomic_jmhTest S 11 testeAtomic S 10 Throughput E A 1 1 1 E I 1 2 E E I 1 3 E E I 1 2 E E E E E E U 7 SECONDS E E 
 JMH S 22 ClassesTeste.BenchTest S 52 ClassesTeste.generated.BenchTest_testeSerial_jmhTest S 11 testeSerial S 10 Throughput E A 1 1 1 E I 1 2 E E I 1 3 E E I 1 2 E E E E E E U 7 SECONDS E E 
+JMH S 22 ClassesTeste.BenchTest S 52 ClassesTeste.generated.BenchTest_testeAtomic_jmhTest S 11 testeAtomic S 10 Throughput E A 1 1 1 E I 1 2 E E I 1 3 E E I 1 2 E E E E E E U 7 SECONDS E E 
+JMH S 22 ClassesTeste.BenchTest S 52 ClassesTeste.generated.BenchTest_testeMTXSEM_jmhTest S 11 testeMTXSEM S 10 Throughput E A 1 1 1 E I 1 2 E E I 1 3 E E I 1 2 E E E E E E U 7 SECONDS E E 

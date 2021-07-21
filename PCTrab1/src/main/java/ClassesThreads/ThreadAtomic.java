@@ -3,7 +3,6 @@ package ClassesThreads;
 import classesComuns.Chebychev;
 import classesComuns.TratamentoImagem;
 import classesPrincipais.Atomic;
-import org.openjdk.jcstress.annotations.Actor;
 
 import java.io.File;
 
@@ -21,8 +20,7 @@ public class ThreadAtomic extends Thread{
         }
     }
 
-    @Actor
-    public void verificarImagem() throws InterruptedException {
+    public int verificarImagem() throws InterruptedException {
         TratamentoImagem tratamento = new TratamentoImagem();
         Chebychev a = new Chebychev();
         File[] files = Atomic.folder.listFiles();
@@ -37,5 +35,6 @@ public class ThreadAtomic extends Thread{
             i = Atomic.idx.getAndIncrement();
         }
         System.out.println(i);
+        return 0;
     }
 }

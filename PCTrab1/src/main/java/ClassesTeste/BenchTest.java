@@ -2,15 +2,13 @@ package ClassesTeste;
 
 import ClassesThreads.ThreadAtomic;
 import ClassesThreads.ThreadMTXSEM;
-import classesComuns.Chebychev;
 import classesComuns.LerCSV;
-import classesComuns.TratamentoImagem;
 import classesPrincipais.Atomic;
 import classesPrincipais.MutexSemaphore;
 import classesPrincipais.Serial;
 import org.openjdk.jmh.annotations.*;
 
-import java.io.File;
+
 import java.util.concurrent.TimeUnit;
 
 public class BenchTest {
@@ -61,7 +59,6 @@ public class BenchTest {
             e.printStackTrace();
         }
     }
-
 }
 
 

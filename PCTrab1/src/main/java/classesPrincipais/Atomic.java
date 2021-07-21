@@ -15,7 +15,6 @@ public class Atomic{
 
 	public static File folder = new File("C:\\Users\\marti\\OneDrive\\Documentos\\GitHub\\PC-PROJETO1\\dataset_2019_1\\dataset");
 	public static ArrayList<Imagem> imagens = new ArrayList<Imagem>();
-	public static volatile Index index = new Index();
 	public static volatile AtomicInteger idx = new AtomicInteger(0);
 
 	public static void main(String[] args) {

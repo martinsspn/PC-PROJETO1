@@ -2,11 +2,11 @@ package classesPrincipais;
 
 import ClassesThreads.ThreadMTXSEM;
 import classesComuns.Imagem;
-import classesComuns.Leitura;
+
 import classesComuns.LerCSV;
 
 import java.io.File;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
