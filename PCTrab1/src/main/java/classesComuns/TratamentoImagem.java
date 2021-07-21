@@ -1,5 +1,6 @@
 package classesComuns;
 
+import nu.pattern.OpenCV;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfFloat;
@@ -12,7 +13,7 @@ import java.util.List;
 
 public class TratamentoImagem {
 	public List<Float> TratamentodaImagem(String caminho){
-		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+		OpenCV.loadLocally();
 		HOGDescriptor hog = new HOGDescriptor();
 		Mat img = new Mat();
 		MatOfFloat features = new MatOfFloat();
