@@ -9,7 +9,7 @@ import classesPrincipais.Serial;
 import org.openjdk.jcstress.annotations.*;
 import org.openjdk.jcstress.infra.results.I_Result;
 
-
+@State
 class TestState{
     Serial serial = new Serial();
     ThreadMTXSEM threadMTXSEM = new ThreadMTXSEM();

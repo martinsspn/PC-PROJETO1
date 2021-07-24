@@ -35,9 +35,10 @@ public class SerialJmeter extends AbstractJavaSamplerClient implements Serializa
         return result;
     }
 
-    @Override
-    public Arguments getDefaultParameters() {
+    @Override public Arguments getDefaultParameters() {
         Arguments defaultParameters = new Arguments();
+        defaultParameters.addArgument("var1","1");
+        defaultParameters.addArgument("var2","2");
         return defaultParameters;
     }
 }
