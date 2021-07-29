@@ -9,7 +9,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
-import java.util.concurrent.atomic.AtomicLong;
+
 
 public class CallableMain {
     public static ArrayList<Imagem> imagens = new ArrayList<Imagem>();
