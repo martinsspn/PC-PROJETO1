@@ -4,7 +4,6 @@ import ClassesThreads.ThreadAtomic;
 import ClassesThreads.ThreadMTXSEM;
 import classesComuns.LerCSV;
 import classesPrincipais.Atomic;
-import classesPrincipais.ExecutorMain;
 import classesPrincipais.MutexSemaphore;
 import classesPrincipais.Serial;
 import org.openjdk.jmh.annotations.*;
@@ -18,21 +17,8 @@ public class BenchTest {
         Serial serial = new Serial();
         ThreadMTXSEM threadMTXSEM = new ThreadMTXSEM();
         ThreadAtomic threadAtomic = new ThreadAtomic();
-
     }
 
-    @Benchmark
-    @Warmup(iterations = 2)
-    @Measurement(iterations = 3)
-    @BenchmarkMode(Mode.Throughput)
-    @Fork(value = 2)
-    @OutputTimeUnit(TimeUnit.SECONDS)
-    public void testeExecutor(State state){
-        ExecutorMain.imagens = LerCSV.lerCSV();
-        ExecutorMain.verificarImagem();
-    }
-
-    /*
     @Benchmark
     @Warmup(iterations = 2)
     @Measurement(iterations = 3)
@@ -43,7 +29,7 @@ public class BenchTest {
         Serial.imagens = LerCSV.lerCSV();
         state.serial.verificarImagem();
     }
-    /*
+
     @Benchmark
     @Warmup(iterations = 2)
     @Measurement(iterations = 3)
@@ -73,8 +59,6 @@ public class BenchTest {
             e.printStackTrace();
         }
     }
-
-     */
 }
 
 

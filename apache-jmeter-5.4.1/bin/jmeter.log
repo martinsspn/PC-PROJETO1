@@ -1,22 +1,22 @@
-2021-07-22 13:39:12,786 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2021-07-22 13:39:12,799 INFO o.a.j.JMeter: Loading user properties from: user.properties
-2021-07-22 13:39:12,800 INFO o.a.j.JMeter: Loading system properties from: system.properties
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: Version 5.4.1
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: java.version=1.8.0_261
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: os.name=Windows 10
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: os.arch=amd64
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: os.version=10.0
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: file.encoding=Cp1252
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: java.awt.headless=null
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: Max memory     =1073741824
-2021-07-22 13:39:12,808 INFO o.a.j.JMeter: Available Processors =16
-2021-07-22 13:39:12,813 INFO o.a.j.JMeter: Default Locale=English (EN)
-2021-07-22 13:39:12,813 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2021-07-22 13:39:12,813 INFO o.a.j.JMeter: JMeterHome=C:\Users\marti\OneDrive\Documentos\GitHub\PC-PROJETO1\apache-jmeter-5.4.1
-2021-07-22 13:39:12,813 INFO o.a.j.JMeter: user.dir  =C:\Users\marti\OneDrive\Documentos\GitHub\PC-PROJETO1\apache-jmeter-5.4.1\bin
-2021-07-22 13:39:12,814 INFO o.a.j.JMeter: PWD       =C:\Users\marti\OneDrive\Documentos\GitHub\PC-PROJETO1\apache-jmeter-5.4.1\bin
-2021-07-22 13:39:12,815 INFO o.a.j.JMeter: IP: 192.168.1.22 Name: Gabriel-PC FullName: Gabriel-PC
-2021-07-22 13:39:12,894 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
-2021-07-22 13:39:13,438 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2021-07-25 10:54:42,421 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2021-07-25 10:54:42,433 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2021-07-25 10:54:42,433 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: Copyright (c) 1998-2021 The Apache Software Foundation
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: Version 5.4.1
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: java.version=1.8.0_261
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: os.name=Windows 10
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: os.arch=amd64
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: os.version=10.0
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: file.encoding=Cp1252
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: java.awt.headless=null
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: Max memory     =1073741824
+2021-07-25 10:54:42,441 INFO o.a.j.JMeter: Available Processors =16
+2021-07-25 10:54:42,446 INFO o.a.j.JMeter: Default Locale=English (EN)
+2021-07-25 10:54:42,446 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2021-07-25 10:54:42,446 INFO o.a.j.JMeter: JMeterHome=C:\Users\marti\OneDrive\Documentos\GitHub\PC-PROJETO1\apache-jmeter-5.4.1
+2021-07-25 10:54:42,446 INFO o.a.j.JMeter: user.dir  =C:\Users\marti\OneDrive\Documentos\GitHub\PC-PROJETO1\apache-jmeter-5.4.1\bin
+2021-07-25 10:54:42,447 INFO o.a.j.JMeter: PWD       =C:\Users\marti\OneDrive\Documentos\GitHub\PC-PROJETO1\apache-jmeter-5.4.1\bin
+2021-07-25 10:54:42,447 INFO o.a.j.JMeter: IP: 192.168.1.22 Name: Gabriel-PC FullName: Gabriel-PC
+2021-07-25 10:54:42,522 INFO o.a.j.JMeter: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2021-07-25 10:54:43,036 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
