@@ -2,14 +2,19 @@ package ClassesTeste;
 
 import ClassesThreads.ThreadAtomic;
 import ClassesThreads.ThreadMTXSEM;
+import classesComuns.Chebychev;
+import classesComuns.Imagem;
 import classesComuns.LerCSV;
-import classesPrincipais.Atomic;
-import classesPrincipais.ExecutorMain;
-import classesPrincipais.MutexSemaphore;
-import classesPrincipais.Serial;
+import classesComuns.TratamentoImagem;
+import classesPrincipais.*;
 import org.openjdk.jmh.annotations.*;
 
 
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
 
 public class BenchTest {
@@ -18,9 +23,34 @@ public class BenchTest {
         Serial serial = new Serial();
         ThreadMTXSEM threadMTXSEM = new ThreadMTXSEM();
         ThreadAtomic threadAtomic = new ThreadAtomic();
-
+        ArrayList<Imagem> imagens = LerCSV.lerCSV();
+        Chebychev a = new Chebychev();
+        TratamentoImagem tratamento = new TratamentoImagem();
+        List<File> files = Arrays.asList(new File("C:\\Users\\marti\\OneDrive\\Documentos\\GitHub\\PC-PROJETO1\\dataset_2019_1\\dataset").listFiles());
+        ForkJoinPool pool = new ForkJoinPool();
+        ForkJoin task = new ForkJoin(files);
     }
 
+    @Benchmark
+    @Warmup(iterations = 2)
+    @Measurement(iterations = 3)
+    @BenchmarkMode(Mode.Throughput)
+    @Fork(value = 2)
+    @OutputTimeUnit(TimeUnit.SECONDS)
+    public void testeParallelStream(State state){
+        state.files.parallelStream().forEach(file -> System.out.println(state.a.KnnFunction(5, state.imagens, state.tratamento.TratamentodaImagem(file.getAbsolutePath()))));
+    }
+
+    @Benchmark
+    @Warmup(iterations = 2)
+    @Measurement(iterations = 3)
+    @BenchmarkMode(Mode.Throughput)
+    @Fork(value = 2)
+    @OutputTimeUnit(TimeUnit.SECONDS)
+    public void testeForkJoin(State state){
+        state.pool.invoke(state.task);
+    }
+    /*
     @Benchmark
     @Warmup(iterations = 2)
     @Measurement(iterations = 3)

@@ -26,7 +26,6 @@ public class ForkJoin extends RecursiveAction {
             verificarImagem(folder);
         } else { // recursive case
 // Calcuate new range
-
             int mid = folder.size() / 2;
             ForkJoin firstSubtask = new ForkJoin(folder.subList(0, mid));
             ForkJoin secondSubtask = new ForkJoin(folder.subList(mid, folder.size()));
@@ -36,7 +35,6 @@ public class ForkJoin extends RecursiveAction {
 // invokeAll(firstSubtask, secondSubtask);
         }
     }
-
 
     public void verificarImagem(List<File> folder){
         TratamentoImagem tratamento = new TratamentoImagem();
