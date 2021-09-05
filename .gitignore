@@ -59,10 +59,8 @@ sysinfo.txt
 crashlytics-build.properties
 /bin/
 .classpath
-*.xml
 *.prefs
 .project
-*.xml
 .idea/workspace.xml
 .idea/workspace.xml
 .idea/modules.xml
@@ -77,7 +75,6 @@ crashlytics-build.properties
 Cinema.iml
 out/production/Cinema/PDSCinema/DAO/AdministradorDAO.class
 pds.xml
-*.xml
 README.md
 *.md
 *.iml
@@ -88,3 +85,18 @@ README.md
 *.cc
 *.cpp
 
+apache-jmeter-5.4.1/bin/log4j2.xml
+apache-jmeter-5.4.1/bin/templates/templates.xml
+apache-jmeter-5.4.1/extras/addons.xml
+apache-jmeter-5.4.1/extras/build.xml
+apache-jmeter-5.4.1/extras/schematic.xml
+PCTrab1/.idea/compiler.xml
+PCTrab1/.idea/jarRepositories.xml
+PCTrab1/.idea/misc.xml
+PCTrab1/.idea/runConfigurations.xml
+PCTrab1/.idea/vcs.xml
+untitled/.idea/compiler.xml
+untitled/.idea/jarRepositories.xml
+untitled/.idea/misc.xml
+untitled/.idea/vcs.xml
+untitled/pom.xml
