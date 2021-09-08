@@ -6,16 +6,15 @@ ClassesTeste\TestJCStress_jcstress$1.class
 classesPrincipais\ExecutorMain$1.class
 classesPrincipais\MutexSemaphore.class
 ClassesTeste\generated\BenchTest_jmhType.class
+ClassesTeste\generated\BenchTest_testeSpark_jmhTest.class
 classesComuns\Chebychev.class
 classesComuns\Imagem.class
 classesPrincipais\CallableMain$1.class
 classesComuns\TratamentoImagem.class
 ClassesTeste\generated\BenchTest_State_jmhType_B1.class
 classesPrincipais\Reactor.class
-ClassesTeste\generated\BenchTest_testeParallelStream_jmhTest.class
 ClassesTeste\generated\BenchTest_jmhType_B3.class
 ClassesTeste\TestJMH.class
-ClassesTeste\generated\BenchTest_testeForkJoin_jmhTest.class
 ClassesTeste\TestJCStress_jcstress$4$1.class
 ClassesTeste\TestJCStress_jcstress$2.class
 ClassesTeste\TestState.class

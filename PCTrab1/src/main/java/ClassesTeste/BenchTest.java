@@ -7,6 +7,8 @@ import classesComuns.Imagem;
 import classesComuns.LerCSV;
 import classesComuns.TratamentoImagem;
 import classesPrincipais.*;
+import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaSparkContext;
 import org.openjdk.jmh.annotations.*;
 
 
@@ -29,8 +31,20 @@ public class BenchTest {
         List<File> files = Arrays.asList(new File("C:\\Users\\marti\\OneDrive\\Documentos\\GitHub\\PC-PROJETO1\\dataset_2019_1\\dataset").listFiles());
         ForkJoinPool pool = new ForkJoinPool();
         ForkJoin task = new ForkJoin(files);
+        SparkConf conf = new SparkConf().setAppName("Programação Concorrente - Spark").setMaster("local[*]");
+        JavaSparkContext sc = new JavaSparkContext(conf);
     }
 
+    @Benchmark
+    @Warmup(iterations = 2)
+    @Measurement(iterations = 3)
+    @BenchmarkMode(Mode.Throughput)
+    @Fork(value = 2)
+    @OutputTimeUnit(TimeUnit.SECONDS)
+    public void testeSpark(State state){
+        Spark.verificarImagem(state.sc);
+    }
+    /*
     @Benchmark
     @Warmup(iterations = 2)
     @Measurement(iterations = 3)
@@ -41,6 +55,8 @@ public class BenchTest {
         state.files.parallelStream().forEach(file -> System.out.println(state.a.KnnFunction(5, state.imagens, state.tratamento.TratamentodaImagem(file.getAbsolutePath()))));
     }
 
+     */
+/*
     @Benchmark
     @Warmup(iterations = 2)
     @Measurement(iterations = 3)
@@ -50,6 +66,8 @@ public class BenchTest {
     public void testeForkJoin(State state){
         state.pool.invoke(state.task);
     }
+
+ */
     /*
     @Benchmark
     @Warmup(iterations = 2)
